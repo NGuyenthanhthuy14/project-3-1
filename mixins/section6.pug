@@ -1,0 +1,11 @@
+mixin section6-item(item)
+    div(class="border border-[#0000001A] rounded-[20px] py-[28px] px-[32px]")
+                        div(class="flex gap-[5px] lg:text-[22px] text-[19px] mb-[15px] text-[#FFC633]")
+                            - for (var i = 1; i <= item.star; i++)
+                                <i class="fa-solid fa-star"></i>
+                            - for (var j = item.star + 1; j <= 5; j++) 
+                                <i class="fa-regular fa-star"></i>
+                        div(class="mb-[12px] flex gap-[4px] items-center")
+                            span(class="font-[700] lg:text-[20px] text-[16px]") #{item.name}
+                            <i class="fa-solid fa-circle-check lg:text-[20px] text-[15px] text-[#01AB31]"></i>
+                        p(class="font-[400] lg:text-[16px] text-[14px] text-[#00000099]") #{item.dsc}

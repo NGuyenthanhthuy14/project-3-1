@@ -1,0 +1,6 @@
+mixin banner-items(item, index)
+    a(
+        href=item.link 
+        class=("relative block sm:h-[289px] h-[190px] rounded-[20px] truncate " + (index == 1 || index == 2 ? "lg:col-span-2" : ""))
+    )
+        img(src=item.image alt=item.title class="h-[100%] w-[100%] object-cover")
